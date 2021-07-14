@@ -35,16 +35,17 @@ li a {
 }
 
 li a:hover {
-  background-color: black;
+  background-color: rgb(251, 248, 248);
 }
 
 button:hover {
-  background-color: rgb(193, 193, 31);
+  background-color: rgba(5, 5, 5, 0.483);
 }
 
 .button,
 a {
   text-decoration: none;
+  color: black;
 }
 
 button {
@@ -57,7 +58,7 @@ button,
 .btn {
   width: 140px;
   height: 45px;
-  border: 1px solid blanchedalmond;
+  color: blanchedalmond;
   border-radius: 25px;
 }
 
