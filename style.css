@@ -1,19 +1,25 @@
 /* Css styles */
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* styling  */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: fixed;
+  position: absolute;
+}
+
+nav {
+  padding-left: 100px;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 5px;
   padding: 0;
   overflow: hidden;
   font-family: serif;
@@ -35,11 +41,11 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(251, 248, 248);
+  background-color: black;
 }
 
 button:hover {
-  background-color: rgba(5, 5, 5, 0.483);
+  background-color: #0ba1a9;
 }
 
 .button,
@@ -51,7 +57,7 @@ a {
 button {
   font-size: 18px;
   font-weight: 700;
-  border: 3px solid #2d25a0;
+  border: 2px solid white;
 }
 
 button,
@@ -60,6 +66,10 @@ button,
   height: 45px;
   color: blanchedalmond;
   border-radius: 25px;
+}
+
+#button-id {
+  margin-left: 300px;
 }
 
 .fa-hand-point-right {
@@ -86,10 +96,10 @@ main section
 
 .fa-arrow-right {
   padding: 5px;
-  width: ;
+  text-align: center;
 }
 
-h1 {
+.page-title h1 {
   font-size: 35px;
   color: #ffffff;
   width: auto;
@@ -99,4 +109,48 @@ h1 {
 img {
   width: 388px;
   height: 428px;
+}
+/* --------------------------------
+  Players content section 
+-------------------------------- */
+.double-container {
+  width: 100%;
+  min-height: 70px;
+  background-color: #f7f7f7;
+}
+
+.players-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.players-content .card {
+  flex: 1;
+  margin: 40px 20px;
+  box-shadow: 0 4x 8x;
+}
+
+.players-content .card img {
+  width: 100%;
+  height: auto;
+}
+
+.players-content .card h3 {
+  margin-top: 20px;
+}
+
+.players-content .card p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #6c6c6c;
+}
+
+/* Responsive */
+@media only screen and(max-width:768px) {
+  .players-content {
+    flex-direction: column;
+  }
 }
