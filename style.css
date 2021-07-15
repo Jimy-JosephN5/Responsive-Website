@@ -40,7 +40,7 @@ li a {
   padding: 14px 16px;
 }
 
-li a:hover {
+li a:hover > {
   background-color: black;
 }
 
@@ -115,7 +115,7 @@ img {
 -------------------------------- */
 .double-container {
   width: 100%;
-  height: 450px;
+  height: 100%;
 }
 
 .players-content {
@@ -150,10 +150,10 @@ img {
 }
 
 .new-container {
-  display: flex;
   width: 100%;
+
+  display: flex;
   text-align: center;
-  padding-left: 156px 141px 86px 156px;
 }
 
 .title {
@@ -163,7 +163,8 @@ img {
 .title h1 {
   font-size: 35px;
   width: auto;
-  padding: 50px;
+  margin: 0;
+  padding: 0;
 }
 .title img {
   width: 414px;
@@ -181,7 +182,25 @@ p {
   color: #6c6c6c;
 }
 
-/* Responsive */
+/* footer  */
+
+.content-link {
+  width: 100%;
+  height: 40px;
+}
+
+.content-link img {
+  width: 10%;
+  height: 40px;
+}
+
+/* Media Queries/Responsive */
+
+/* Mobile Devices */
+
+@media and screen only (max-width: 688px) {
+}
+
 @media only screen and(max-width:768px) {
   .players-content {
     flex-direction: column;
