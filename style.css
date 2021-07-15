@@ -115,22 +115,22 @@ img {
 -------------------------------- */
 .double-container {
   width: 100%;
-  min-height: 70px;
-  background-color: #f7f7f7;
+  height: 450px;
 }
 
 .players-content {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 20px 100px;
 }
-
 .players-content .card {
-  flex: 1;
+  flex: 20%;
   margin: 40px 20px;
-  box-shadow: 0 4x 8x;
+  background-color: seashell;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .players-content .card img {
@@ -144,8 +144,9 @@ img {
 
 .players-content .card p {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 10px;
   color: #6c6c6c;
+  text-align: justify;
 }
 
 .new-container {
@@ -165,9 +166,10 @@ img {
   padding: 50px;
 }
 .title img {
-  width: 567px;
-  height: 427px;
+  width: 414px;
+  height: 404px;
 }
+
 .title p {
   margin: 10px;
   padding-top: 10px;
